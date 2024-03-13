@@ -5,5 +5,8 @@ function setup() {
 }
 
 function draw() {
-  // put drawing code here
+  stroke(random(0,255), random(0,255), random(0,255));
+  if(mouseIsPressed === true){
+    line(mouseX, mouseY, pmouseX, pmouseY);
+  }
 }
